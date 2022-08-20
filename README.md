@@ -1,8 +1,8 @@
 # ethiopic numerals
 
-An algorithm to convert numbers to ethiopic numerals.
+An algorithm that converts numbers to ethiopic numerals.
 This is an implementation of [Ethiopic Numeral Algorithm](https://www.geez.org/Numerals/) from [geez.org](http://www.geez.org/).
-Test case are taken from [here](https://www.geez.org/Numerals/NumberSamples.html).
+The test cases are taken from [here](https://www.geez.org/Numerals/NumberSamples.html).
 
 ## Examples
 
