@@ -4,6 +4,14 @@ An algorithm that converts numbers to ethiopic numerals.
 This is an implementation of [Ethiopic Numeral Algorithm](https://www.geez.org/Numerals/) from [geez.org](http://www.geez.org/).
 The test cases are taken from [here](https://www.geez.org/Numerals/NumberSamples.html).
 
+## Install
+
+add the following to your `Cargo.toml`
+
+```
+ethiopic-numerals = "0.1.0"
+```
+
 ## Examples
 
 ```
