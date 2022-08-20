@@ -1,4 +1,4 @@
-# ethiopic numerals
+# ethiopic-numerals
 
 An algorithm that converts numbers to ethiopic numerals.
 This is an implementation of [Ethiopic Numeral Algorithm](https://www.geez.org/Numerals/) from [geez.org](http://www.geez.org/).
