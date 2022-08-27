@@ -37,7 +37,7 @@ pub fn ethiopic(num: usize) -> String {
         };
 
         if ethio_one == Some('፩')
-            && sep != ""
+            && !sep.is_empty()
             && ethio_ten.is_none()
             && (num.peek().is_none() || sep == "፻")
         {
