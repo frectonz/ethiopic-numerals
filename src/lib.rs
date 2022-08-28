@@ -9,7 +9,6 @@ pub fn ethiopic(num: usize) -> String {
     }
 
     let mut num = num.chars().rev().peekable();
-
     let mut ethiopic_num = String::new();
     let mut pos = 0;
     while let (Some(ascii_one), Some(ascii_ten)) = (num.next(), num.next()) {
@@ -46,15 +45,16 @@ pub fn ethiopic(num: usize) -> String {
 
         let mut part = String::new();
 
-        if let Some(x) = ethio_ten {
-            part.push(x);
-        }
-        if let Some(x) = ethio_one {
-            part.push(x);
-        }
+        ethio_ten.map(|v| {
+            part.push(v);
+        });
+
+        ethio_one.map(|v| {
+            part.push(v);
+        });
 
         part.push_str(sep);
-        ethiopic_num = format!("{part}{ethiopic_num}");
+        ethiopic_num.insert_str(0, &part);
         pos += 1;
     }
 
@@ -213,3 +213,4 @@ mod tests {
         }
     }
 }
+
